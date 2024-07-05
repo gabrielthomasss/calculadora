@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="visor">
+            <input type="text" id="display" readonly>
+            <div class="cursor"></div>
+        </div>
+        <div class="teclado">
+            <div class="linha">
+                <button class="botao" onclick="adicionarNumero('7')">7</button>
+                <button class="botao" onclick="adicionarNumero('8')">8</button>
+                <button class="botao" onclick="adicionarNumero('9')">9</button>
+                <button class="botao-operador" onclick="definirOperador('+')">+</button>
+            </div>
+            <div class="linha">
+                <button class="botao" onclick="adicionarNumero('4')">4</button>
+                <button class="botao" onclick="adicionarNumero('5')">5</button>
+                <button class="botao" onclick="adicionarNumero('6')">6</button>
+                <button class="botao-operador" onclick="definirOperador('-')">-</button>
+            </div>
+            <div class="linha">
+                <button class="botao" onclick="adicionarNumero('1')">1</button>
+                <button class="botao" onclick="adicionarNumero('2')">2</button>
+                <button class="botao" onclick="adicionarNumero('3')">3</button>
+                <button class="botao-operador" onclick="definirOperador('*')">×</button>
+            </div>
+            <div class="linha">
+                <button class="botao" onclick="adicionarNumero('0')">0</button>
+                <button class="botao" onclick="adicionarPonto()">.</button>
+                <button class="igual" onclick="igualar()">=</button>
+                <button class="botao-operador" onclick="definirOperador('/')">÷</button>
+            </div>
+            <div class="linha">
+                <button class="botao" onclick="limparVisor()">C</button>
+                <button class="botao" onclick="apagarUltimo()">AC</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/renderer.js"></script>
+</body>
+</html>
